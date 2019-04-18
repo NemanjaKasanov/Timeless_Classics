@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="css/xml.css"?>
+<!DOCTYPE users[
+	<!ELEMENT users (user*)>
+	<!ELEMENT user (perYear, perDay, country)>
+	<!ELEMENT perYear (#PCDATA)>
+	<!ELEMENT perDay (#PCDATA)>
+	<!ELEMENT country (#PCDATA)>
+	<!ATTLIST user gender (Male|Female) "Male">
+]>
+<users>
+	<user gender="Male">
+		<perYear>fifteen or less</perYear>
+		<perDay>between one and two hours</perDay>
+		<country>Serbia</country>
+	</user>
+	<user gender="Female">
+		<perYear>fifteen or less</perYear>
+		<perDay>between one and two hours</perDay>
+		<country>Spain</country>
+	</user>
+	<user gender="Male">
+		<perYear>ten or less</perYear>
+		<perDay>less than an hour</perDay>
+		<country>USA</country>
+	</user>
+</users>

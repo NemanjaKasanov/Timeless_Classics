@@ -1,0 +1,443 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Barlow', sans-serif;
+}
+.cleaner {
+	clear: both;
+}
+.italic {
+	font-style: italic;
+}
+
+/* ---------------------- */
+
+#wrapper {
+	width: 1200px;
+	margin: 0px auto;
+	margin-top: 53px;
+}
+header {
+	z-index: 999;
+	width: 1200px;
+	height: 50px;
+	background-color: #fff;
+	border-bottom: 3px solid black;
+	position: fixed;
+	top: 0px;
+}
+#headerLogo {
+	float: left;
+}
+header a {
+	text-decoration: none;
+	color: #000;
+	font-size: 26px;
+}
+header h1{
+	font-size:26px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+header img {
+	float: left;
+	margin-left: 20px;
+}
+#socialMedia ul li {
+	list-style-type: none;
+	display: inline;
+	margin: 15px;
+	
+}
+#socialMedia {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+/* ---------------------- */
+
+#titleImage {
+	background-image: url("../images/titleBackground.jpg");
+	background-color: #EDA11C;
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+#titleImage #titles {
+	font-size: 40px;
+	position: absolute;
+	top: 170px;
+	left: 180px;
+}
+#titleImage #titles h2 {
+	font-size: 40px;
+}
+
+#menu {
+	width: 100%;
+	background-color: #000;
+}
+#menu ul li {
+	display: inline;
+}
+#menu ul {
+	list-style-type: none;
+	width: 800px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+}
+#menu ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	display: block;
+	padding: 14px 5px;
+}
+#menu ul li a:hover {
+	color: black;
+	background-color: white;
+}
+
+/* ---------------------- */
+
+footer {
+	width: 100%;
+	background-color: #000;
+	height: 100px;
+	color: white;
+	font-size: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+#footerLeft, #footerRight, #footerAnimation {
+	margin: 15px 10px;
+}
+#footerAnimation {
+	width: 300px;
+	font-size: 22px;
+	position: relative;
+	animation-name: animation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+@keyframes animation {
+	0% {
+		left: 0px;
+	}
+	50% {
+		left: 200px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+/* ---------------------- */
+
+#main {
+	width: 1150px;
+	min-height: 300px;
+	margin: 0px auto;
+}
+#welcome {
+	margin-top: 10px;
+	border-bottom: 2px solid black;
+}
+#welcome h1 {
+	margin-bottom: 8px;
+	font-size: 36px;
+}
+#welcome h2 {
+	margin-bottom: 8px;
+	font-size: 24px;
+	float: left;
+	width: 1050px;
+}
+#welcome p {
+	float: right;
+	font-size: 50px;
+	margin-right: 20px;
+}
+
+/* ---------------------- */
+
+#mainSmall {
+	width: 820px;
+	float: left;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+aside {
+	width: 300px;
+	float: right;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.artH1 {
+	font-size: 40px;
+	margin: 8px 0px;
+}
+.artH2 {
+	font-size: 15px;
+	margin: 5px 0px;
+	text-align: justify;
+}
+.artP {
+	font-size: 20px;
+	margin: 5px 0px;
+	text-align: justify;
+}
+#section1 {
+	margin: 30px 0px;
+}
+.artA a {
+	color: #000;
+	font-size: 20px;
+	text-decoration: underline;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	width: 62px;
+	border-radius: 5px;
+}
+.artA {
+	margin-bottom: 20px;
+}
+.artA a:hover {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ---------------------- */
+
+#form label{
+	font-size: 18px;
+}
+#form h1 {
+	font-size: 30px;
+	margin: 8px 0px;
+}
+input[type = "text"] {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px 10px;
+	background-color: #f9f9f9;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+select {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px 10px;
+	background-color: #f9f9f9;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+input[type = "submit"] {
+	box-sizing: border-box;
+	width: 48%;
+	padding: 8px 10px;
+	background-color: #f9f9f9;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+input[type = "submit"]:hover {
+	background-color: #000;
+	color: #fff;
+}
+input[type = "reset"] {
+	box-sizing: border-box;
+	width: 48%;
+	padding: 8px 10px;
+	background-color: #f9f9f9;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+input[type = "reset"]:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/* ------------POPULAR------------ */
+
+.popularTitle {
+	width: 1100px;
+	padding: 30px 0px;
+}
+.popularTitle h1 {
+	font-size: 42px;
+	text-indent: 25px;
+	margin: 0px auto;
+}
+.popularTitle h2 {
+	font-size: 30px;
+	text-indent: 25px;
+}
+.popularRev {
+	width: 1100px;
+	padding: 8px 0px;
+	margin: 0px auto;
+	margin-bottom: 14px;
+}
+.popHeader {
+	margin: 0px auto;
+	padding: 15px 0px;
+	background-image: url("../images/reviewTitle.jpg");
+	background-repeat: no-repeat;
+	background-color: #cc7a00;
+}
+.popHeader h1 {
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+.popHeader h2 {
+	font-size: 26px;
+	width: 100%;
+	text-align: center;
+}
+.popText  {
+	text-indent: 40px;
+	font-size: 22px;
+	text-align: justify;
+	width: 95%;
+	margin: 16px auto;
+}
+
+/* ---------- WRITERS --------- */
+
+.writerWrapper {
+	width: 100%;
+	margin: 15px 0px;
+	padding: 10px 0px;
+	border-bottom: 1px solid black;
+}
+.writer img{
+	width: 400px;
+	height: 400px;
+	float: left;
+	border-radius: 50%;
+}
+.writerText {
+	float: left;
+	margin-left: 40px;
+	width: 700px;
+	text-indent: 30px;
+	text-align: justify;
+}
+.writerText p {
+	margin: 8px 0px;
+}
+.writerTitle {
+	font-size: 24px;
+}
+.writerDescription {
+	font-size: 18px;
+}
+
+/* ---------- BOOKS BOOKS BOOKS BOOKS ---------- */
+
+.book {
+	width: 100%;
+	margin: 15px 0px;
+}
+.bookTitle {
+	width: inherit;
+	padding: 20px 0px;
+	background-image: url("../images/reviewTitle.jpg");
+}
+.bookTitle h1 {
+	font-size: 30px;
+	text-align: center;	
+}
+.bookText summary {
+	font-size: 26px;
+	text-align: center;
+	padding: 8px 0px;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	margin: 8px 0px;
+}
+.bookText p {
+	font-size: 22px;
+	text-indent: 30px;
+	margin: 5px 0px;
+}
+
+/* ---------- ABOUT AUTHOR ---------- */
+
+#author {
+	width: 550px;
+	margin: 30px auto;
+}
+#authorImg img {
+	filter: grayscale(100%);
+	border-radius: 50%;
+	display: block;
+	margin: 25px auto;
+}
+#authorText {
+	margin: 0px auto;
+}
+#authorText h1 {
+	font-size: 34px; 
+	text-align: center;
+	margin-bottom: 12px;
+}
+#authorText h2 {
+	font-size: 34px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+#authorText p {
+	font-size: 26px;
+	text-align: center;
+	margin: 8px 0px;
+}
+
+/* ----------- LINKS ---------- */
+
+#links {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+#links a {
+	color: #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 0px 8px;
+}
+#links a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
